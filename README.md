@@ -35,8 +35,9 @@ You should obtain your cookie to run this program. You can follow these steps to
 
 5. Find variable `_U` and copy it's value.
 
-6. Lasly, paste this value in the code.
+![image](https://github.com/Weyaxi/Dalle-3-Unoffical-API/assets/81961593/2393dc26-205c-4d5a-bdc7-dd3d7cda6b1b)
 
+Paste this value in the code.
 
 ## Usage
 
