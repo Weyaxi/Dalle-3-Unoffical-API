@@ -51,7 +51,7 @@ git clone https://github.com/Weyaxi/Dalle-3-Unoffical-API
 2. Open a terminal or command prompt and navigate to the script's directory:
 
 ```bash
-cd  Dalle-3-Unoffical-API
+cd Dalle-3-Unoffical-API
 ```
 
 3. Run the script dalle3_arg.py with a query as an argument to download the generated images:
