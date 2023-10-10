@@ -1,0 +1,3 @@
+requests
+undetected-chromedriver==3.5.3
+selenium==4.9.0
