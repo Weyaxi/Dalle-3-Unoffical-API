@@ -21,6 +21,22 @@ To install the required packages, run:
 ```bash
 pip install undetected-chromedriver selenium requests
 ```
+### Write Your Cookie to `dalle3_api.py` File:
+
+You should obtain your cookie to run this program. You can follow these steps to obtain your cookie:
+
+1. Go to [Bing Image Creator](https://www.bing.com/create) in your browser and log in to your account.
+
+2. Then press `Ctrl+Shift+J` to open developer tools.
+
+3. Navigate to the Application section.
+
+4. Click on Cookies section.
+
+5. Find variable `_U` and copy it's value.
+
+6. Lasly, paste this value in the code.
+
 
 ## Usage
 
