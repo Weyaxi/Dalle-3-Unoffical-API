@@ -23,6 +23,7 @@ def get_time_save():
 
 
 def download_images(urls, save_folder):
+    save_folder = (save_folder)[:225]
     try:
         timestamp_folder = os.path.join(save_folder, get_time_save())
         if not os.path.exists(timestamp_folder):
