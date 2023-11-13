@@ -2,10 +2,12 @@ from undetected_chromedriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 import datetime
 import logging
 import requests
 import os
+import time
 
 options = ChromeOptions()
 options.add_argument("--disable-blink-features=AutomationControlled")
@@ -46,12 +48,17 @@ def open_website(query):
     cookie = {"name": "_U",
               "value": cookie_value}
 
-    driver.get(f'https://www.bing.com/images/create?q={query}')
-    logging.info(f"{get_time()} Bing İmage Creator (Dalle-3) Opened")
+    driver.get(f'https://www.bing.com/images/create')
+    logging.info(f"{get_time()} Bing Image Creator (Dalle-3) Opened")
 
     driver.add_cookie(cookie)
     driver.refresh()
     logging.info(f"{get_time()} Cookie values added ")
+
+    input = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#sb_form_q')))
+    input.send_keys(query)
+    input.send_keys(Keys.RETURN)
+    logging.info(f"{get_time()} Sent query to Bing Image Creator (Dalle-3)")
 
     return True
 
