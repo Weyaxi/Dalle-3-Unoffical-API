@@ -55,10 +55,10 @@ git clone https://github.com/Weyaxi/Dalle-3-Unoffical-API
 cd Dalle-3-Unoffical-API
 ```
 
-3. Run the script dalle3_arg.py with a query as an argument to download the generated images:
+3. Run the script `dalle3_arg.py` with a query or queries as an argument to download the generated images:
 
 ```bash
-python3 dalle3_arg.py "your_search_query"
+python3 dalle3_arg.py "your_search_query" "your_search_query_2"
 ```
 
 ## Functionality
